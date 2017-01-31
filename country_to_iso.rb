@@ -12,7 +12,7 @@ s.shift
 
 n.split(",").each do |name|
   s.each do |row|
-    if row[1] == name
+    if row[1].upcase == name.upcase
       if row[3]
         puts "#{name},#{row[3]}"
       end
